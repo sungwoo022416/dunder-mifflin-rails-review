@@ -1,0 +1,16 @@
+<h1> Dog Info </h1>
+
+<h3> Dog Attribtue </h3>
+<ul>
+  <li>  <%= @dog.name %> </li>
+   <li> <%= @dog.breed %> </li>
+   <li>  <%= @dog.age %> </li>
+</ul>
+
+<h3> Employee Attribtue </h3>
+
+<ul>
+    <% @dog.employees.each do |employee| %>
+        <li> <%=link_to employee.first_name, employee %>, <%= link_to employee.last_name, employee %> </li>
+        <% end %>
+</ul>

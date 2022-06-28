@@ -1,0 +1,10 @@
+<h1> Employee Info </h1>
+
+<h3> Employee Attribtue </h3>
+<ul>
+  <li>  <%= @employee.first_name %>, <%= @employee.last_name %> </li>
+   <li> <%= @employee.title %> </li>
+
+   <h4> funny image </h4>
+   <li>  <%= link_to @employee.alias, @employee.img_url %> </li>
+</ul>
