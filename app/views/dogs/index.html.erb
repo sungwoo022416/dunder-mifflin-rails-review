@@ -1,6 +1,9 @@
 <h1> Dog Names </h1>
+
+<%= link_to "ordered_list_of_dogs", :controller => "dogs", :sorted => "true" %>
 <ul>
 <% @dogs.each do |dog| %>
-    <li><%= link_to dog.name, dog %></li><br>
+    <li><%= link_to dog.name, dog %> || <%= dog.employees.count %></li><br>
     <% end %>
 </ul>
+

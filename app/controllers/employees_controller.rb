@@ -5,10 +5,6 @@ class EmployeesController < ApplicationController
         @employees = Employee.all
     end
 
-    def modified_index
-        render :modified_index
-    end
-
     def show
     end
 
